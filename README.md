@@ -5,6 +5,8 @@ I was trying using other libararies allready ported to Blazor, but **html5-qrcod
 
 [html5-qrcode documentation](https://scanapp.org/html5-qrcode-docs/docs/intro)
 
+You can find nuget package [here](https://www.nuget.org/packages/Html5QrcodeBlazor.Wrapper)
+
 # Usage
 1. Register service:
 `builder.Services.AddScoped<Html5QrcodeReader>();`
