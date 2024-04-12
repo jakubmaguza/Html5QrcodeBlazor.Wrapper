@@ -11,7 +11,10 @@ export async function renderHtml5Qrcode(divName, fps, verbose) {
     html5QrCodeScanner.render(handleCameraBarcodeScan);
 }
 export async function stopCamera() {
-    await html5QrCode?.stop();
+    if (html5QrCodeScanner)
+        html5QrCodeScanner.clear();
+    if (html5QrCode)
+        await html5QrCode.stop();
 }
 export async function setDotNetHelper(value) {
     dotNetHelper = value;
